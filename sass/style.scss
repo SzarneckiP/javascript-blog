@@ -4,6 +4,7 @@
 
 $color-light: #fff;
 $color-dark: #444;
+$color-blue: #2980b9;
 
 $font-logo: 'Sacramento', cursive;
 $font-header: 'Oswald', sans-serif;
@@ -40,7 +41,13 @@ body {
     color: lighten($color-dark, 20%);
   }
 }
-
+a {
+  text-transform: none;
+  color: black;
+    &:hover {
+      color: $color-blue;
+    }
+}
 /* Layout */
 
 .wrapper {
@@ -80,6 +87,9 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  a {
+    text-decoration: none;
+  }
   .active {
     font-weight: bold;
   }
@@ -118,3 +128,6 @@ body {
     margin: 0 10px 0 0;
   }
 }
+
+/*List Titles*/
+

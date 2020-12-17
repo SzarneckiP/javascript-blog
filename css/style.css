@@ -32,6 +32,15 @@ body {
   color: #777777;
 }
 
+a {
+  text-transform: none;
+  color: black;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
 /* Layout */
 .wrapper {
   display: flex;
@@ -70,6 +79,10 @@ body {
   padding: 0;
 }
 
+.list a {
+  text-decoration: none;
+}
+
 .list .active {
   font-weight: bold;
 }
@@ -103,5 +116,7 @@ body {
 .post-tags p {
   margin: 0 10px 0 0;
 }
+
+/*List Titles*/
 
 /*# sourceMappingURL=style.css.map */
