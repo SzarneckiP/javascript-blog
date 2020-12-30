@@ -65,7 +65,7 @@ function generateTitleLinks(customSelector = '') {
 
 generateTitleLinks();
 
-const calculateTagsParams = function(tags) {
+const calculateCssParams = function(tags) {
   const params = {
     max: '0',
     min: '999999',
@@ -121,7 +121,7 @@ function generateTags(){
   /* END LOOP: for every article: */
   }
   const tagList = document.querySelector(opt.tagsListSelector); /* [NEW] find list of tags in right column */
-  const tagsParams = calculateTagsParams(allTags);
+  const tagsParams = calculateCssParams(allTags);
   //let allTagsHTML = ''; /* [NEW] create variable for all links HTML code */
   const allTagsData = {tags: []};
   console.log('allTagsData:', allTagsData);
@@ -199,7 +199,7 @@ function generateAuthors() {
     authorWrapper.innerHTML = linkHTML;
   }
   const authorsList = document.querySelector(opt.authorsListSelector);
-  const tagsParams = calculateTagsParams(allAuthors);
+  const tagsParams = calculateCssParams(allAuthors);
   //let allAuthorsHTML = '';
   const allAuthorsData = {authors: []};
   for(let author in allAuthors) {
